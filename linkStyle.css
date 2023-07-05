@@ -20,41 +20,53 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--grey-palette);
     display: flex;
     justify-content: center;
 }
 
-header{
+header {
     position: absolute;
     top: 25px;
     width: 96%;
-    height: 170px;
+    height: 150px;
     border-radius: 20px;
     background-color: var(--dark-blue-palette);
     display: flex;
     justify-content: center;
+    box-shadow: none;
+    transition: 0.4s ease-in-out;
 }
 
-header h1{
+header:hover {
+    box-shadow: 0px 0px 8px 3px rgb(163, 163, 163);
+}
+
+header h1 {
     color: white;
-    line-height: 170px;
+    line-height: 150px;
     font-size: 45px;
     font-family: 'Heebo', sans-serif;
 }
 
-.container{
+.container {
     border-radius: 20px;
     background-color: white;
-    height: 380px;
+    height: 400px;
     width: 96%;
     position: absolute;
-    top: 220px; 
+    top: 200px;
+    box-shadow: none;
+    transition: 0.4s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0px 0px 8px 3px rgb(163, 163, 163);
 }
 
 footer {
-    border-radius: 20px;
+    border-radius: 20px; 
     background-color: white;
     height: 65px;
     width: 96%;
