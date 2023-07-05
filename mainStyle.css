@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&displ0ay=swap');
+
+:root {
+    --grey-palette: #F6F1F1;
+    --light-blue-palette: #AFD3E2;
+    --blue-palette: #19A7CE;
+    --dark-blue-palette: #146C94;
+    --side-shadow: 5px 0px 20px rgb(174, 174, 174);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    width: auto;
+    height: 100%;
+    overflow-y: hidden;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--grey-palette);
+    /* border: 3px solid green; */
+}
+
+.left-panel {
+    background-color: var(--dark-blue-palette);
+    width: 34%;
+    box-shadow: var(--side-shadow);
+    /* border: 3px solid red; */
+}
+
+.left-panel .details {
+    /* background-color: var(--blue-palette); */
+    background-image: linear-gradient(225deg, var(--dark-blue-palette), var(--blue-palette));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0%;
+    height: 150px;
+    padding: 30px;
+    border-radius: 20px;
+    left: -60px;
+    position: absolute;
+    top: 75%;
+    transition: 0.4s ease-out;
+    overflow: hidden;
+}
+
+.details li {
+    list-style-type: none;
+    color: white;
+    font-size: 19px;
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
+}
+
+.left-panel img {
+    width: 34%;
+    height: auto;
+    position: absolute;
+    top: -45px;
+    left: -45px;
+    transition: 0.4s ease-out;
+}
+
+.left-panel:hover img {
+    left: 0px;
+}
+
+.left-panel:hover .details {
+    width: 35%;
+    box-shadow: 0px 0px 6px 2px rgba(174, 174, 174, 0.51);
+}
+
+.container {
+    /* border: 3px solid blue; */
+    position: fixed;
+    top: 0px;
+    left: 34%;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    border-radius: 20px;
+    background-color: white;
+    height: 65px;
+    width: 92%;
+    position: absolute;
+    top: 25px;
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
+    /* border: 3px solid red; */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    float: left;
+    text-align: center;
+    line-height: 65px;
+    /* border: 3px solid red; */
+}
+
+nav li a {
+    color: var(--dark-blue-palette);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 21px;
+    width: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+nav li a:hover {
+    background-color: var(--dark-blue-palette);
+    border-radius: 20px;
+    margin: 0;
+    color: white;
+}
+
+nav:hover {
+    box-shadow: 0px 0px 8px 3px rgb(163, 163, 163);
+}
+
+footer {
+    border-radius: 20px;
+    background-color: white;
+    height: 65px;
+    width: 92%;
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 65px;
+    box-shadow: none;
+    transition: 0.4s ease-in-out;
+    /* border: 3px solid green; */
+}
+
+footer:hover {
+    box-shadow: 0px 0px 8px 3px rgb(163, 163, 163);
+}
+
+footer p {
+    font-size: 19px;
+    padding: 0px 30px 0px 30px;
+    color: var(--dark-blue-palette);
+}
+
+footer .portfolio_text {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--blue-palette);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    /* background-color: white; */
+    /* border: 3px solid green; */
+}
+
+.content p {
+    color: var(--dark-blue-palette);
+    font-size: 23px;
+}
+
+.content .name {
+    color: var(--blue-palette);
+    font-size: 120px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    /* border: 3px solid green; */
+    /* height: fit-content; */
+}
+
+.resume {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 63%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    cursor: default;
+    /* border: 3px solid red; */
+}
+
+.resume input {
+    width: 130px;
+    height: 45px;
+    border-radius: 13px;
+    border-color: var(--blue-palette);
+    border-width: 3px;
+    background-color: white;
+    font-size: 17px;
+    color: var(--dark-blue-palette);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.resume :hover {
+    box-shadow: 0px 0px 8px 3px rgb(163, 163, 163);
+}
+
+.resume input:hover {
+    background-color: var(--dark-blue-palette);
+    border: none;
+    color: white;
+}
