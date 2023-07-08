@@ -125,5 +125,24 @@ footer .portfolio_text {
 .contacts ul a:hover {
     font-size: 20px;
     color: var(--dark-blue-palette);
+}
 
+.map{ 
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 600px;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: none;
+    transition: 0.2s ease-in-out;
+    /* border: 3px solid green; */
+}
+
+.map:hover{
+    box-shadow: 0px 0px 5px 1px rgb(163, 163, 163);
+}
+
+.map iframe{
+    width: 100%;
 }
