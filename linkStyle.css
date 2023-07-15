@@ -16,7 +16,7 @@
     font-family: 'Nunito', sans-serif;
     width: auto;
     height: 100%;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     box-sizing: border-box;
 }
 
@@ -32,7 +32,8 @@ header {
     width: 96%;
     height: 150px;
     border-radius: 20px;
-    background-color: var(--dark-blue-palette);
+    /* background-color: var(--dark-blue-palette); */
+    background-image: linear-gradient(135deg,  var(--dark-blue-palette)50%,  var(--light-blue-palette));
     display: flex;
     justify-content: center;
     box-shadow: none;
@@ -41,6 +42,44 @@ header {
 
 header:hover {
     box-shadow: 0px 0px 8px 3px rgb(163, 163, 163);
+}
+
+header .back {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 1%;
+    height: 70px;
+    border-radius: 0 20px 20px 0px;
+    background-color: var(--light-blue-palette);
+    overflow-x: hidden;
+    transition: 0.4s ease-in-out;
+    display: grid;
+    place-content: center;
+}
+
+header .back a{
+    overflow: hidden;
+    display: flex;
+    width: 30px;
+    /* border: 3px solid green; */
+}
+
+header:hover .back{
+    width: 4%;
+    box-shadow: 0px 0px 8px 3px rgba(90, 90, 90, 0.615);
+}
+
+header:hover span {
+    opacity: 1;
+}
+
+.back span {
+    overflow-x: hidden;
+    scale: 1.4;
+    color: var(--dark-blue-palette);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
 header h1 {
@@ -99,6 +138,8 @@ footer .portfolio_text {
 }
 
 
+
+/* CONTACT */
 .contacts {
     position: absolute;
     top: 10%;
@@ -127,7 +168,7 @@ footer .portfolio_text {
     color: var(--dark-blue-palette);
 }
 
-.map{ 
+.map {
     position: absolute;
     top: 10%;
     right: 10%;
@@ -139,10 +180,60 @@ footer .portfolio_text {
     /* border: 3px solid green; */
 }
 
-.map:hover{
+.map:hover {
     box-shadow: 0px 0px 5px 1px rgb(163, 163, 163);
 }
 
-.map iframe{
+.map iframe {
     width: 100%;
+    border-radius: 20px;
 }
+
+
+/* ABOUT */
+.about {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    /* border: 3px solid green; */
+}
+
+.about p {
+    font-size: 18px;
+    color: var(--dark-blue-palette);
+    text-align: justify;
+}
+
+
+/* QUALIFICATION */
+.qualification {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    
+    width: 100%;
+    height: 50%;
+    color: var(--dark-blue-palette);
+    font-size: 18px;
+    /* border: 3px solid red; */
+}
+
+section .subQuali{
+    position: relative;
+    top: -78%;
+    left: 5%;
+    width: 92%;
+    height: 75%;
+    /* border: 3px solid yellow; */
+}
+
